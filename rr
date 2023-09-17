@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zn-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #eee;
+      }
+      .yingyin {
+        box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+          rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+      }
+      /* * {
+        border: 1px solid #333;
+      } */
+      .flex {
+        display: flex;
+      }
+      .baise {
+        background-color: white;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mgr {
+        margin-right: 8px;
+      }
+      .mgt {
+        margin-top: 8px;
+      }
+      .daohang {
+        padding: 10px 20px;
+        border-bottom: 1px solid rgb(190, 190, 190);
+        font-size: 12px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <!--侧-->
+    <div style="width: 200px; z-index: 2" class="baise yingyin">
+      <!--图-->
+      <div
+        style="
+          padding: 10px;
+          align-items: center;
+          justify-content: center;
+          border-bottom: 1px solid #999;
+        "
+        class="flex"
+      >
+        <img src="D:\R\S.png" width="40px" height="40px" alt="SHR" />
+        <div style="margin-left: 10px">SHR</div>
+      </div>
+      <!--导航栏-->
+      <div class="flex daohang">s</div>
+      <div class="flex daohang">s</div>
+      <div class="flex daohang">s</div>
+      <div class="flex daohang">s</div>
+      <div class="flex daohang">s</div>
+    </div>
+    <!--主-->
+    <div class="flex1 flex column">
+      <!--头-->
+      <div style="height: 60px; z-index: 1" class="baise yingyin"></div>
+      <!--身-->
+      <div style="overflow: auto" class="flex1 flex">
+        <!--左-->
+        <div style="flex: 3" class="flex column mg8">
+          <!--左上-->
+          <div class="flex">
+            <div class="flex1 mgr yingyin baise" style="height: 100px"></div>
+            <div class="flex1 mgr yingyin baise"></div>
+            <div class="flex1 mgr yingyin baise"></div>
+            <div class="flex1 yingyin baise"></div>
+          </div>
+          <!--左下-->
+          <div class="flex column">
+            <div class="baise mgt yingyin" style="height: 160px"></div>
+            <div class="baise mgt yingyin" style="height: 160px"></div>
+            <div class="baise mgt yingyin" style="height: 160px"></div>
+            <div class="baise mgt yingyin" style="height: 160px"></div>
+            <div class="baise mgt yingyin" style="height: 160px"></div>
+          </div>
+        </div>
+        <!--右-->
+        <div style="flex: 1" class="flex column mgr mgt">
+          <!--右上-->
+          <div style="height: 150px" class="baise yingyin"></div>
+          <!--右下-->
+          <div class="baise mgt yingyin" style="height: 300px"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
